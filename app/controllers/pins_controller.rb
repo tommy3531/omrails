@@ -1,5 +1,6 @@
 class PinsController < ApplicationController
   before_filter :authenticate_user!, expect: [:index]
+  
   # GET /pins
   # GET /pins.json
   def index
